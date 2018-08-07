@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.animated-page-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}

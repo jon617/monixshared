@@ -1,0 +1,229 @@
+/* CSS declarations go here */
+html, body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #111111;
+  min-height: 100%;
+  height: 100%;
+  font-smoothing: antialiased;
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+}
+body {
+  /* overflow: hidden; */
+  overflow-y: scroll;
+}
+#render-target {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: "Geomanist";
+    src: local('Geomanist Thin'), url('/fonts/geomanist/geomanist-thin.eot');
+    src: url("/fonts/geomanist/geomanist-thin.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/geomanist/geomanist-thin.woff2") format("woff2"),
+        url("/fonts/geomanist/geomanist-thin.woff") format("woff"),
+        url("/fonts/geomanist/geomanist-thin.ttf") format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Geomanist";
+    src: local('Geomanist Light'), url('/fonts/geomanist/geomanist-light.eot');
+    src: url("/fonts/geomanist/geomanist-light.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/geomanist/geomanist-light.woff2") format("woff2"),
+        url("/fonts/geomanist/geomanist-light.woff") format("woff"),
+        url("/fonts/geomanist/geomanist-light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Geomanist";
+    src: local('Geomanist Regular'), url('/fonts/geomanist/geomanist-regular.eot');
+    src: url("/fonts/geomanist/geomanist-regular.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/geomanist/geomanist-regular.woff2") format("woff2"),
+        url("/fonts/geomanist/geomanist-regular.woff") format("woff"),
+        url("/fonts/geomanist/geomanist-regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Geomanist";
+    src: url('/fonts/geomanist/geomanist-medium.eot');
+    src: url("/fonts/geomanist/geomanist-medium.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/geomanist/geomanist-medium.woff2") format("woff2"),
+        url("/fonts/geomanist/geomanist-medium.woff") format("woff"),
+        url("/fonts/geomanist/geomanist-medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Geomanist";
+    src: url('/fonts/geomanist/geomanist-bold.eot');
+    src: url("/fonts/geomanist/geomanist-bold.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/geomanist/geomanist-bold.woff2") format("woff2"),
+        url("/fonts/geomanist/geomanist-bold.woff") format("woff"),
+        url("/fonts/geomanist/geomanist-bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Thin), url('/fonts/roboto/Roboto-Thin.eot');
+    src: url("/fonts/roboto/Roboto-Thin.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/roboto/Roboto-Thin.woff2") format("woff2"),
+        url("/fonts/roboto/Roboto-Thin.woff") format("woff"),
+        url("/fonts/roboto/Roboto-Thin.ttf") format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Light), url('/fonts/roboto/Roboto-Light.eot');
+    src: url("/fonts/roboto/Roboto-Light.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/roboto/Roboto-Light.woff2") format("woff2"),
+        url("/fonts/roboto/Roboto-Light.woff") format("woff"),
+        url("/fonts/roboto/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Regular), url('/fonts/roboto/Roboto-Regular.eot');
+    src: url("/fonts/roboto/Roboto-Regular.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+        url("/fonts/roboto/Roboto-Regular.woff") format("woff"),
+        url("/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('/fonts/roboto/Roboto-Medium.eot');
+    src: url("/fonts/roboto/Roboto-Medium.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/roboto/Roboto-Medium.woff2") format("woff2"),
+        url("/fonts/roboto/Roboto-Medium.woff") format("woff"),
+        url("/fonts/roboto/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('/fonts/roboto/Roboto-Bold.eot');
+    src: url("/fonts/roboto/Roboto-Bold.eot?#iefix") format('embedded-opentype'),
+        url("/fonts/roboto/Roboto-Bold.woff2") format("woff2"),
+        url("/fonts/roboto/Roboto-Bold.woff") format("woff"),
+        url("/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+  font-family: 'fg';
+  src: url('/fonts/fg/FoundersGrotesk-Light.eot');
+  src: url('/fonts/fg/FoundersGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/fg/FoundersGrotesk-Light.woff') format('woff'),
+       url('/fonts/fg/FoundersGrotesk-Light.ttf') format('truetype'),
+       url('/fonts/fg/FoundersGrotesk-Light.svg#webfontregular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'fg';
+    src: url('/fonts/foundersgrotesk/foundersgroteskweb-regular-webfont.eot');
+    src: url('/fonts/foundersgrotesk/foundersgroteskweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/foundersgrotesk/foundersgroteskweb-regular-webfont.woff') format('woff'),
+         url('/fonts/foundersgrotesk/foundersgroteskweb-regular-webfont.ttf') format('truetype'),
+         url('/fonts/foundersgrotesk/foundersgroteskweb-regular-webfont.svg#webfontregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fg';
+    src: url('/fonts/foundersgrotesk/foundersgroteskweb-medium-webfont.eot');
+    src: url('/fonts/foundersgrotesk/foundersgroteskweb-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/foundersgrotesk/foundersgroteskweb-medium-webfont.woff') format('woff'),
+         url('/fonts/foundersgrotesk/foundersgroteskweb-medium-webfont.ttf') format('truetype'),
+         url('/fonts/foundersgrotesk/foundersgroteskweb-medium-webfont.svg#webfontregular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fg';
+    src: url('/fonts/foundersgrotesk/foundersgroteskweb-semibold-webfont.eot');
+    src: url('/fonts/foundersgrotesk/foundersgroteskweb-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/foundersgrotesk/foundersgroteskweb-semibold-webfont.woff') format('woff'),
+         url('/fonts/foundersgrotesk/foundersgroteskweb-semibold-webfont.ttf') format('truetype'),
+         url('/fonts/foundersgrotesk/foundersgroteskweb-semibold-webfont.svg#webfontregular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'text-security-disc';
+  src: url('/fonts/password/text-security-disc.eot');
+  src: url('/fonts/password/text-security-disc.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/password/text-security-disc.woff') format('woff'),
+       url('/fonts/password/text-security-disc.ttf') format('truetype'),
+       url('/fonts/password/text-security-disc.svg#text-security') format('svg');
+}
+
+/* make everything non-draggable by default */
+div {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+a {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+/* HIGHLIGHTING */
+
+::-webkit-selection {
+  background-color: #34a853;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+::-moz-selection {
+  background-color: #34a853;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+::selection {
+  background-color: #34a853;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* get rid of the internet explorer X on text fields */
+input[type="text"]::-ms-clear {
+  display: none;
+}
