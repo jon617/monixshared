@@ -1,0 +1,33 @@
+.PermissionsEdit {
+  margin-top: 15px;
+  .PermissionsEditTable {
+    display: table;
+    width: 275px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    .PermissionsEditTableBody {
+      display: table-row-group;
+      .PermissionsEditTableRow {
+        display: table-row;
+        .PermissionsEditText {
+          display: table-cell;
+          font-size: 18px;
+          font-weight: 400;
+          width: 195px;
+          padding-left: 10px;
+          padding-right: 10px;
+          vertical-align: middle;
+          text-align: left;
+          cursor: pointer;
+        }
+        .PermissionsEditToggle {
+          display: table-cell;
+          width: 60px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

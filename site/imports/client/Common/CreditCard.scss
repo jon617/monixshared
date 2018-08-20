@@ -1,0 +1,27 @@
+.CreditCard {
+  border: 1px solid #aaaaaa;
+  .CreditCardTable {
+    display: table;
+    table-layout: fixed;
+    width: 570px;
+    border-collapse: collapse;
+    .CreditCardTableBody {
+      display: table-row-group;
+      .CreditCardTableRow {
+        display: table-row;
+        .CreditCardNumber {
+          display: table-cell;
+          width: 330px;
+        }
+        .CreditCardExp {
+          display: table-cell;
+          width: 140px;
+        }
+        .CreditCardCVV {
+          display: table-cell;
+          width: 100px;
+        }
+      }
+    }
+  }
+}

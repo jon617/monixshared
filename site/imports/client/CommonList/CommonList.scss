@@ -1,0 +1,55 @@
+.CommonList {
+  margin-top: 25px;
+  width: 600px;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 25px;
+  // this centers the box on the page:
+  margin-left: auto;
+  margin-right: auto;
+
+  .Title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #111111;
+    span {
+      border-bottom: 1px solid #cccccc;
+    }
+  }
+
+  .InputFieldTitle {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .InputField {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ShowStateTitle {
+    width: 300px;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #cccccc;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ShowState {
+    width: 400px;
+    // font-family: "Courier New", Courier, monospace;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: normal;
+    word-wrap: break-word;
+    .ShowStateLine {
+      
+    }
+  }
+}

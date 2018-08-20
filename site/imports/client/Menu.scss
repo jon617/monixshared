@@ -1,0 +1,24 @@
+$width: 400px;
+
+.Menu {
+  margin-top: 25px;
+  width: $width;  // the $width is defined at the very top of this page.
+  border-radius: 10px;
+  border: 1px solid #aaaaaa;
+  padding: 20px;  // give a padding between the content inside the div and the border of the div
+  // the following two lines (margin-left and margin-right) equal to auto is what centers this div
+  margin-left: auto;
+  margin-right: auto;
+  .Title {
+    font-size: 24px;
+    font-weight: 300;  // thinner than normal.  Normal would be 400.
+    margin-bottom: 25px;
+  }
+  .MenuButtons {
+    text-align: center;
+    .MenuButton {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+$circleSize: 20px;
+$circleRadius: 10px;
+.DurationInput {
+  .DurationInputContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 0;
+    .DurationInputDropdown {
+      position: absolute;
+      z-index: 1;
+      top: 43px;
+      left: 0;
+      width: 200px;
+      height: 100px;
+      border: 1px solid red;
+      background-color: #ffffff;
+      .DurationInputDropdownTable {
+        display: table;
+        table-layout: fixed;
+        .DurationInputDropdownBody {
+          display: table-row-group;
+          .DurationInputDropdownRow {
+            display: table-row;
+            .DurationInputDropdownArrows {
+              display: table-cell;
+              width: 30px;
+              border: 1px solid red;
+              .DurationInputDropdownArrow {
+                display: block;
+                text-align: center;
+                cursor: pointer;
+              }
+            }
+            .DurationInputDropdownTime {
+              display: table-cell;
+              width: 60px;
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

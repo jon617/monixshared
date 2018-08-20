@@ -1,0 +1,41 @@
+.ClassPicker {
+  padding: 10px;
+  .ClassPickerDropdownContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    .ClassPickerDropdown {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 250px;
+      max-height: 248px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: #ffffff;
+      border: 1px solid #888888;
+      .NoClassesText {
+        text-align: center;
+        padding-top: 25px;
+      }
+      .ClassPickerDropdownItem:hover {
+        background-color: #eeeeee;
+      }
+      .ClassPickerDropdownItem {
+        height: 40px;
+        border-bottom: 1px solid #aaaaaa;
+        width: 100%;
+        line-height: 40px;
+        vertical-align: middle;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -7,6 +7,8 @@
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.51",
     "animated": "^0.2.2",
+    "credit-card-type": "^7.0.0",
+    "date-holidays": "^1.2.6",
     "history": "^4.7.2",
     "libphonenumber-js": "^1.2.21",
     "material-ui": "^0.20.1",
@@ -19,8 +21,10 @@
     "react-icons-kit": "^1.1.6",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "react-svg": "^5.0.21",
     "react-switch": "^3.0.4",
     "react-transition-group": "^1.2.0",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "zxcvbn": "^4.4.2"
   }
 }

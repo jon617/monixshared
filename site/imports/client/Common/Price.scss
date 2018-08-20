@@ -1,0 +1,12 @@
+.PriceContainer {
+  position: relative;
+  width: 0;
+  height: 0;
+  .PriceDollarSign {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+}

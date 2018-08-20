@@ -8,16 +8,36 @@ import history from './browserHistory';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
 import AnimatedSwitch from "./AnimatedSwitch";
 import { connect } from 'react-redux';
+import * as actions from './actions';
 
 // screens
-import Menu    from './Menu';
-import Payment from './Payment';
+import CommonList from './CommonList';
+import Menu       from './Menu';
+import Payment    from './Payment';
 
 // css
 import './App.css';
 
 class App extends Component {
+  componentDidMount() {
+    window.addEventListener( "resize", this.setScreenDimensions );
+  }
+  setScreenDimensions = () => {
+    var w = window;
+    var d = document;
+    var documentElement = d.documentElement;
+    var body = d.getElementsByTagName("body")[0];
+    var width =  w.innerWidth || documentElement.clientWidth || body.clientWidth;
+    var height = w.innerHeight|| documentElement.clientHeight|| body.clientHeight;
+    // console.log("setting dimensions");
+    this.props.setScreen({
+      width: width,
+      height: height,
+    });
+  }
+
   render() {
+    console.log( this.props );
     return (
       <div className="App">
         <Router history={ history }>
@@ -42,6 +62,10 @@ class App extends Component {
                         path="/payment"
                         component={ Payment }
                       />
+                      <Route
+                        path="/commonlist"
+                        component={ CommonList }
+                      />
                     </AnimatedSwitch>
                   </TransitionGroup>
                 )
@@ -59,6 +83,6 @@ const mapStateToprops = (state) => {
   };
 };
 
-export default connect( mapStateToprops, null )(
+export default connect( mapStateToprops, actions )(
   App
 );

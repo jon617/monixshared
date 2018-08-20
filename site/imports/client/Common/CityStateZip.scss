@@ -1,0 +1,27 @@
+.CityStateZip {
+  border: 1px solid #aaaaaa;
+  .CityStateZipTable {
+    display: table;
+    table-layout: fixed;
+    width: 570px;
+    border-collapse: collapse;
+    .CityStateZipTableBody {
+      display: table-row-group;
+      .CityStateZipTableRow {
+        display: table-row;
+        .City {
+          display: table-cell;
+          width: 330px;
+        }
+        .State {
+          display: table-cell;
+          width: 120px;
+        }
+        .Zip {
+          display: table-cell;
+          width: 120px;
+        }
+      }
+    }
+  }
+}
